@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.bumptech.glide.Glide
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
 import com.ifcd61.xmlcomponents.databinding.ActivityMainBinding
@@ -39,5 +40,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnSkip.setOnClickListener {
             binding.cvAd.visibility = View.GONE
         }
+
+        val url: String = "https://upload.wikimedia.org/wikipedia/commons/6/66/Android_robot.png"
+        Glide.with(this)
+            .load(url)
+            .into(binding.imgUrl)
+
     }
 }
