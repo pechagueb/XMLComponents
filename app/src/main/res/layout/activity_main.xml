@@ -46,7 +46,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/imgCard"/>
 
-
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -56,8 +55,7 @@
                     android:ellipsize="end"
                     app:layout_constraintStart_toStartOf="@id/tvTitle"
                     app:layout_constraintEnd_toEndOf="@id/tvTitle"
-                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
-                    />
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnBuy"
@@ -110,7 +108,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
        </com.google.android.material.card.MaterialCardView>
-
 
     </LinearLayout>
 
